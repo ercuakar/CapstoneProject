@@ -38,7 +38,7 @@ def gather_and_clean_data(ticker):
 # Step 2: Technical and Fundamental Analysis
 def calculate_technical_indicators(df):
     # Implementation of technical indicators (e.g., SMA, EMA, RSI, MACD, Bollinger Bands, ADX, ATR)
-    pass
+    pass #(will update the indicators)
 
 def get_vix_data(start_date, end_date):
     vix_data = yf.download('^VIX', start=start_date, end=end_date)
@@ -65,10 +65,10 @@ def run_backtest(stock_data):
 
 # Step 4: Sentiment Analysis
 def fetch_sentiment_data(symbols, start_date, end_date):
-    pass
+    pass #(Will update the code for sentimental analysis)
 
 def analyze_sentiment(sentiment_data):
-    pass
+    pass #(Will update the code for sentimental analysis)
 
 def analyze_sentiment_advanced(text_data):
     analyzer = SentimentIntensityAnalyzer()
