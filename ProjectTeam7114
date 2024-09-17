@@ -10,7 +10,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 # Scikit-learn and scipy are referenced but not used in the code yet.
 
 # Installation of VADER sentiment analysis package
-# pip install vaderSentiment
+pip install vaderSentiment
 
 # Step 1: Gathering and Cleaning Historical Data
 def gather_and_clean_data(ticker):
@@ -57,7 +57,7 @@ def calculate_put_call_ratio(options_data):
 # Step 3: Strategy Development and Backtesting
 def run_backtest(stock_data):
     cerebro = bt.Cerebro()
-    cerebro.addstrategy(SwingTradingStrategy)  # Assuming `SwingTradingStrategy` is defined elsewhere
+    cerebro.addstrategy(SwingTradingStrategy) #(Will define the swing trading strategy later)
     data = bt.feeds.PandasData(dataname=stock_data)
     cerebro.adddata(data)
     cerebro.run()
